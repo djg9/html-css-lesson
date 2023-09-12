@@ -1,0 +1,72 @@
+/*
+    CSS - Cascading Style Sheets
+    Language that defines positioning and look of html elements
+
+    Ruleset:
+    Selector {
+        declaration
+        property: value;
+        property: value;
+        key: value;
+    }
+
+    Box Model:
+    Every element has a margin, border, and padding
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+ } /* resets default browser values */
+
+ body {
+    background-color: #cacaca;
+    font-family: Arial, Helvetica, sans-serif;
+    /* if computer doesnt have arial, helvetica will be used, etc */
+ }
+
+ /* element selector */
+ header {
+    background-color: blue;
+    padding: 1em;
+    text-align: center;
+ }
+
+ /* ID selector */
+ #nav-bar {
+    background-color: #396f94;
+    padding: 1em;
+    text-align: right;
+ }
+
+ /* class selector */
+ .nav-link {
+    color: white;
+    text-decoration: none;
+    text-align: end;
+ }
+
+ #bully-pic {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+ }
+
+ .article {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    padding: 1em;
+    border: 20px solid #396f94;
+    border-radius: 5px;
+ }
+
+ .article > ul {
+    margin-left: 1em;
+ }
+
+ /* compound selector */
+ .article > h1 {
+    margin-bottom: 1em;
+ }
